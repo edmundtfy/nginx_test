@@ -4,7 +4,7 @@ services:
     build: .
     command: bundle exec puma -C config/puma.rb
     volumes:
-      - /var/www/sample_rails_docker_app
+      - /var/www/nginx_test
     expose:
       - "3000"
   web:
