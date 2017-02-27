@@ -22,7 +22,7 @@ COPY config/puma.rb config/puma.rb
 # Copy the main application.
 COPY . .
  
-EXPOSE 3000
+EXPOSE 9080
 
 # The default command that gets ran will be to start the Puma server.
 CMD bundle exec puma -C config/puma.rb
