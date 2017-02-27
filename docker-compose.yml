@@ -3,10 +3,12 @@ services:
   app:
     build: .
     command: bundle exec puma -C config/puma.rb
+    environment:
+      PORT: 8080
     volumes:
       - /var/www/api
     expose:
-      - "3000"
+      - "3000:3000"
   web:
     build:
       context: .
